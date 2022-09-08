@@ -1,0 +1,297 @@
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                        
+                        body {
+                            background-color: #8dbea0;
+                        }
+                        
+                        div {
+                            /* border: 1px solid black;*/
+                        }
+                        
+                        .containere {
+                            margin: 10px 100px 50px 100px;
+                            background-color: rgb(245, 241, 241);
+                            box-shadow: 2px 2px 5px black;
+                        }
+                        
+                        .wrappere>div {
+                            background-color: #eee;
+                            padding: /* border: 1px solid black;*/
+                        }
+                        
+                        .wrappere>div:nth-child(odd) {
+                            background-color: #ddd;
+                        }
+                        
+                        .wrappere {
+                            display: grid;
+                            grid-template-columns: repeat(16, 1fr);
+                            grid-auto-rows: minmax(70px, auto);
+                            /*border: 1px dashed blanchedalmond;*/
+                            margin: 0;
+                            padding: 0;
+                            padding-bottom: 100px;
+                        }
+                        
+                        .wrapper-one {
+                            background-image: url(image/home-box.jpg);
+                            background-position: center center;
+                            background-size: cover;
+                            grid-column: 1/17;
+                            grid-row: 1/6;
+                            background-color: rgba(255, 255, 255, 0.5);
+                        }
+                        
+                        .ule li {
+                            list-style: none;
+                            display: inline;
+                            padding-right: 30px;
+                        }
+                        
+                        .ule {
+                            padding-top: 15px;
+                        }
+                        
+                        ul li a {
+                            color: rgb(255, 255, 255);
+                            font-size: 18px;
+                            text-decoration: none;
+                            text-shadow: 0.5px 0.5px 1px black;
+                        }
+                        
+                        ul li a:hover {
+                            color: rgb(214, 211, 211)
+                        }
+                        
+                        .nave {
+                            padding: 1px 0px 50px 0px;
+                            background-color: rgba(173, 216, 230, 0.5);
+                        }
+                        
+                        .nav-icon {
+                            float: left;
+                            width: 40%;
+                            padding-left: 10px;
+                            padding-top: 5px;
+                        }
+                        
+                        .nav-link {
+                            float: right;
+                            width: 27%;
+                        }
+                        
+                        .home-box-text {
+                            clear: both;
+                        }
+                        
+                        .home-box-text {
+                            /* background-color: rgba(247, 244, 244, 0.6);*/
+                            position: relative;
+                            padding: 30px 0px 45px 0px;
+                            text-align: center;
+                            color: rgb(13, 14, 10);
+                        }
+                        
+                        .home-box-text h1 {
+                            font-size: 50px;
+                            font-family: script MT;
+                        }
+                        
+                        .home-box-text p {
+                            font-family: lucida calligraphy;
+                            text-shadow: 1px 1px 3px #ddd;
+                        }
+                        
+                        .wrapper-two {
+                            grid-column: 6/12;
+                            grid-row: 4/8;
+                            box-shadow: 1px 1px 10px black;
+                        }
+                        
+                        .loginbox {
+                            padding: 5px;
+                            position: relative;
+                            text-align: center;
+                            margin-right: 25px;
+                            margin-top: 10px;
+                        }
+                        
+                        .btn-made {
+                            position: relative;
+                            left: 5px;
+                            top: 30px;
+                        }
+                        
+                        .fform {
+                            margin-top: px;
+                        }
+                        
+                        .sing-up {
+                            float: left;
+                            width: 30%;
+                            padding-left: 3px;
+                        }
+                        
+                        .sign-up-wrapper {
+                            position: relative;
+                            top: -40px;
+                        }
+                        
+                        .help {
+                            float: right;
+                            width: 30%;
+                            text-align: right;
+                            padding-right: 3px;
+                        }
+                        
+                        .footer {
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                        /*bootstrap starts here */
+                        
+                        .form-control {
+                            display: block;
+                            width: 100%;
+                            padding: .375rem .75rem;
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            color: #495057;
+                            background-color: #fff;
+                            background-clip: padding-box;
+                            border: 1px solid #ced4da;
+                            border-radius: .25rem;
+                            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+                        }
+                        
+                        @media screen and (prefers-reduced-motion:reduce) {
+                            .form-control {
+                                transition: none
+                            }
+                        }
+                        
+                        .form-control::-ms-expand {
+                            background-color: transparent;
+                            border: 0
+                        }
+                        
+                        .form-control:focus {
+                            color: #495057;
+                            background-color: #fff;
+                            border-color: #80bdff;
+                            outline: 0;
+                            box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+                        }
+                        
+                        .form-control::-webkit-input-placeholder {
+                            color: #6c757d;
+                            opacity: 1
+                        }
+                        
+                        .form-control::-moz-placeholder {
+                            color: #6c757d;
+                            opacity: 1
+                        }
+                        
+                        .form-control:-ms-input-placeholder {
+                            color: #6c757d;
+                            opacity: 1
+                        }
+                        
+                        .form-control::-ms-input-placeholder {
+                            color: #6c757d;
+                            opacity: 1
+                        }
+                        
+                        .form-control::placeholder {
+                            color: #6c757d;
+                            opacity: 1
+                        }
+                        
+                        .form-control:disabled,
+                        .form-control[readonly] {
+                            background-color: #e9ecef;
+                            opacity: 1
+                        }
+                        
+                        select.form-control:not([size]):not([multiple]) {
+                            height: calc(2.25rem + 2px)
+                        }
+                        
+                        select.form-control:focus::-ms-value {
+                            color: #495057;
+                            background-color: #fff
+                        }
+                        
+                        .form-control-file,
+                        .form-control-range {
+                            display: block;
+                            width: 100%
+                        }
+                        /* The button stuf starts here.*/
+                        
+                        .btn {
+                            display: inline-block;
+                            font-weight: 400;
+                            text-align: center;
+                            white-space: nowrap;
+                            vertical-align: middle;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            border: 1px solid transparent;
+                            padding: .375rem .75rem;
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            border-radius: .25rem;
+                            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+                        }
+                        
+                        @media screen and (prefers-reduced-motion:reduce) {
+                            .btn {
+                                transition: none
+                            }
+                        }
+                        
+                        .btn-success {
+                            color: #fff;
+                            background-color: #28a745;
+                            border-color: #28a745
+                        }
+                        
+                        .btn-success:hover {
+                            color: #fff;
+                            background-color: #218838;
+                            border-color: #1e7e34
+                        }
+                        
+                        .btn-success.focus,
+                        .btn-success:focus {
+                            box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .5)
+                        }
+                        
+                        .btn-success.disabled,
+                        .btn-success:disabled {
+                            color: #fff;
+                            background-color: #28a745;
+                            border-color: #28a745
+                        }
+                        
+                        .btn-success:not(:disabled):not(.disabled).active,
+                        .btn-success:not(:disabled):not(.disabled):active,
+                        .show>.btn-success.dropdown-toggle {
+                            color: #fff;
+                            background-color: #1e7e34;
+                            border-color: #1c7430
+                        }
+                        
+                        .btn-success:not(:disabled):not(.disabled).active:focus,
+                        .btn-success:not(:disabled):not(.disabled):active:focus,
+                        .show>.btn-success.dropdown-toggle:focus {
+                            box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .5)
+                        }

@@ -1,0 +1,39 @@
+body {
+    background-color: rgba(116, 150, 161, 0.6);
+}
+
+span {
+    font-size: 16px;
+}
+
+.login-form {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 300px 10px 300px;
+    text-align: center;
+}
+
+.Instruction {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Instruction h4 {
+    font-size: 12px;
+}
+
+.back-to-home-page {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cntnr {
+    margin: 10px 100px 20px 100px;
+    text-align: center;
+    background-color: rgba(199, 199, 199, 0.5);
+    box-shadow: 1px 1px 15px black;
+}
+
+.footer {
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*div {
+    border: 0.5px black dotted;}*/
+
+.wrapper>div {
+    background-color: ;
+    padding: 1em;
+    /* border: 1px solid black;*/
+}
+
+.wrapper>div:nth-child(odd) {
+    background-color: ;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    border: 1px dashed blanchedalmond;
+    padding-bottom: 100px;
+}
+
+
+/*im-lg starts here*/
+
+.im-lg {
+    grid-column: 1/13;
+    grid-row: 1/5;
+    background-image: url(image/im-lg.png);
+    background-position: center center;
+    background-size: cover;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.im-lg h1 {
+    margin: 0;
+    font-family: algerian;
+    padding: 10px 0px 0px 0px;
+    font-size: 100px;
+    letter-spacing: 0.3em;
+    color: #55600b;
+}
+
+.im-lg h1:hover {
+    color: #55d7a2;
+}
+
+.im-lg p {
+    font-family: chiller;
+    font-size: 24px;
+}
+
+
+/*im-lg ends here */
+
+
+/*im-md starts here*/
+
+.im-md {
+    background-color: lightgreen;
+    grid-column: 5/9;
+    grid-row: 3/8;
+    border: 1px solid lightgray;
+    background-image: url(image/im-md.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.im-md a {
+    background-color: #55600b;
+    margin: 0;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 140px;
+    font-family: chiller;
+    font-size: 24px;
+}
+
+.im-md a:hover {
+    background-color: #55d7a2;
+    color: #55600b;
+}
+
+
+/*im-md ends here*/
+
+
+/*im-sm first star here**/
+
+.im-sm-first {
+    background-color: lightseagreen;
+    grid-column: 3/5;
+    grid-row: 4/8;
+    background-image: url(image/im-sm-first.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/*im-sm-first end here*/
+
+
+/*im-sm-second starts here*/
+
+.im-sm-second {
+    background-color: lightslategray;
+    grid-column: 9/11;
+    grid-row: 4/8;
+    background-image: url(image/im-sm-second.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/*im-sm-second ends here*/

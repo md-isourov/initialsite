@@ -1,0 +1,16 @@
+1:28 AM 6/10/2018
+
+Well, 
+This is my 1st full webpage by only using html and css (also some framework parts).
+This page is created when I am learning web development.
+This is my initial page.
+My WebPage.
+
+
+>>>>>>>>>
+
+Well,
+If you want to watch my website---
+Just click on the index.html and you are done to watch everything.
+
+>>>>>>>>

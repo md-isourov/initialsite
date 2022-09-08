@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-menu {
+    width: 100%;
+    /* background-color: rgb(26, 26, 40); */
+    background: rgb(1, 1, 14);
+    background: -moz-linear-gradient(left, rgb(1, 1, 14) 0%, rgb(26, 26, 40) 100%);
+    background: -webkit-linear-gradient(left, rgb(1, 1, 14) 0%, rgb(26, 26, 40) 100%);
+    background: linear-gradient(to right, rgb(1, 1, 14) 0%, rgb(26, 26, 40) 100%);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.logo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.menu {
+    flex: 1;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 242, 205);
+    /* margin-left: 10px; */
+}
+
+.menu a:hover {
+    border-bottom: 2px solid wheat;
+}
+
+.contact {
+    background-color: wheat;
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.contact:hover {
+    background-color: rgb(219, 195, 154);
+}
+
+
+/* container  */
+
+.container {
+    /* width: 80%; */
+    margin: auto;
+}
+
+
+/* container-1 */
+
+.container-1 {
+    /* margin-top: 30px; */
+    background-image: url(./img/TechCover2.png);
+    background-size: cover;
+    background-position: center;
+    /* width: 100%; */
+    height: auto;
+}
+
+.content {
+    width: 60%;
+    margin-left: 10%;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: left; */
+    /* margin-left: 3rem; */
+    color: aliceblue;
+    /* border: 1px solid red; */
+    padding: 50px 0;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.content a {
+    background-color: rgba(24, 22, 15, 1);
+    width: 100px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: thistle;
+}
+
+.content a:hover {
+    background-color: rgba(32, 30, 21, 1);
+    color: wheat;
+}

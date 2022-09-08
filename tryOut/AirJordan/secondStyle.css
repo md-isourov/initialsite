@@ -1,0 +1,173 @@
+/* Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Root */
+
+* {
+    margin: 0;
+    padding: 0;
+    --body-font-family: "Poppins", sans-serif;
+    --small-font-size: 0.825rem;
+    --normal-font-size: 1rem;
+    --h2-font-size: 1.5rem;
+    --h1-font-size: 1.25rem;
+    /* ------ */
+    --first-color: #f87e2d;
+    --white-color: #e9eaec;
+    --dark-color: #ff7d32bd;
+    --dark-color-lighten: #f2f5ff;
+    --price-color: #1a1716bd;
+    transition: all 0.5s ease;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--normal-font-size);
+    background-color: var(--dark-color-lighten);
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    /* margin: 0; */
+}
+
+
+/* container */
+
+.card,
+.main-content,
+.content,
+.shoe__name,
+.price,
+.shoe__image,
+.buy__now,
+.content,
+.main-content {
+    transition: all 0.5s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-content {
+    /* padding-left: 2rem; */
+    margin: 0;
+}
+
+.card {
+    background-color: var(--first-color);
+    width: 320px;
+    height: 350px;
+    border-radius: 1rem;
+    /* transition: all 0.3s ease; */
+}
+
+.card .content {
+    /* overflow: hidden; */
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+.shoe__image {
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    transform: scale(0.7);
+    border: 1px solid black;
+}
+
+.card:hover .shoe__image {
+    transform: translateY(-2.9rem) rotate(-20deg) scale(0.8);
+    padding-left: 0;
+}
+
+.content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto; */
+    border: 1px solid black;
+    padding-left: 2rem;
+    transition: 0.5s;
+    /* margin-top: 2rem; */
+    /* overflow: hidden; */
+}
+
+.card:hover .content {
+    align-items: flex-start;
+}
+
+.card:hover .main-content {
+    transform: translateY(-4rem);
+    text-align: left;
+}
+
+.shoe__name {
+    color: var(--white-color);
+    /* margin-bottom: 2rem; */
+    margin-top: 4rem;
+    padding-left: 3rem;
+}
+
+span.price {
+    color: var(--price-color);
+    font-size: var(--h2-font-size);
+    /* margin-top: 1rem; */
+    padding-left: 6.7rem;
+    font-weight: 800;
+}
+
+.card:hover span.price {
+    margin-bottom: 2rem;
+    padding-left: 0;
+}
+
+.card:hover .shoe__name {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.details__line {
+    color: var(--dark-color-lighten);
+    margin-bottom: 0.5rem;
+    font-size: var(--small-font-size);
+    opacity: 0;
+}
+
+a.buy__now {
+    color: black;
+    background-color: whitesmoke;
+    padding: 0.5rem 1rem;
+    opacity: 0;
+}
+
+.card:hover .details__line {
+    opacity: 1;
+}
+
+.card:hover .buy__now {
+    opacity: 1;
+    margin-top: 1.5rem;
+}

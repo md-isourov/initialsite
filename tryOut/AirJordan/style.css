@@ -1,0 +1,135 @@
+/* font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* root */
+
+* {
+    /* font */
+    --body-font-family: "Poppins", sans-serif;
+    --h1-font: 1.5rem;
+    --h2-font: 1.25rem;
+    --normal-font: 1rem;
+    --small-font: 0.875rem;
+    /* colors */
+    --first-color: #cd383e;
+    --white-color: #e9eaec;
+    --dark-color: #ff7d32bd;
+    --dark-color-lighten: #f2f5ff;
+}
+
+
+/* base */
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--normal-font);
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ==card== */
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color-lighten);
+}
+
+.card {
+    width: 320px;
+    height: 400px;
+    background-color: var(--dark-color);
+    border-radius: 1rem;
+    padding: 4rem 2rem 0;
+    color: var(--white-color);
+    overflow-y: hidden;
+}
+
+.shoes {
+    position: absolute;
+    width: 260px;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+
+.card__content {
+    transform: translateY(13.2rem);
+    text-align: center;
+}
+
+.shoe__name {
+    font-size: var(--h1-font);
+    color: var(--first-color);
+}
+
+.price {
+    display: inline-block;
+    font-size: var(--h2-font);
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.details {
+    font-size: var(--small-font);
+    text-align: initial;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+}
+
+.buy__now {
+    display: block;
+    width: max-content;
+    padding: 1.25rem 2rem;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    font-weight: 600;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    opacity: 0;
+}
+
+
+/* effects */
+
+.buy__now:hover {
+    box-shadow: 0 18px 40px -12px rgba(242, 162, 12, 0.35);
+}
+
+.shoes,
+.shoe__name,
+.price,
+.details,
+.card__content {
+    transition: 0.5s;
+}
+
+.card:hover .shoes {
+    transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+}
+
+.card:hover .shoe__name {}
+
+.card:hover .buy__now {}
